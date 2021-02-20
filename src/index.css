@@ -1,0 +1,33 @@
+.tic-tac-toe {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 50px auto;
+}
+
+.ttt-grid {
+    width: 83.3px;
+    height: 83.3px;
+    border: 1px solid black;
+    float: left;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-block {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-block input {
+    margin-bottom: 10px;
+}
