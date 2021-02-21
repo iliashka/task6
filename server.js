@@ -2,6 +2,8 @@ const express = require('express');
 const useSocket = require('socket.io')
 const cors = require('cors')
 
+const PORT = 9999
+
 const app = express();
 const http = require('http')
 const server = http.Server(app);
@@ -78,7 +80,7 @@ io.on('connection', (socket) => {
     console.log('user connected', socket.id);
 })
 
-server.listen(9999, (err) => {
+server.listen(PORT, (err) => {
     if (err) {
         throw Error(err);
     }
